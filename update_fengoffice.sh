@@ -27,8 +27,17 @@ sleep 1
 EXITO "Iniciando respaldo de la base de datos"
 mkdir -p ~/respaldos/fengoffice/
 
-mysqldump fengoffice > ~/respaldos/fengoffice/fengoffice.sql
-EXITO "Respaldo finalizado"
+echo "Por favor, ingrese el usuario de la base de datos"
+read USERDB
+
+echo "Por favor, ingrese el nombre de la base de datos"
+read DB
+
+echo "Por favor, ingrese la contraseña de la base de datos"
+read PASSDB
+
+mysqldump -u $USERDB -p$PASSDB -d $DB > ~/respaldos/fengoffice/fengoffice.sql
+EXITO "Base de datos respaldada en $HOME/respaldos/fengoffice/fengoffice.sql"
 sleep 1
 
 EXITO "Iniciando actualización de Feng Office a la versión $VERSION"
