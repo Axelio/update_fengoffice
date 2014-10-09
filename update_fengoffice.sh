@@ -11,13 +11,13 @@ REPOSITORIO='http://sourceforge.net/projects/opengoo/files/fengoffice'
 
 echo "Introduzca la versión a la que quiere actualizar. La última probada en este escript fue la 2.7.1.1"
 read VERSION
-EXITO "Ha seleccionado la version $VERSION"
+EXITO "Ha seleccionado la versión $VERSION"
 sleep 1
 
 mkdir -p /tmp/fengoffice/
 cd /tmp/fengoffice/
 
-EXITO "Descargando la version $VERSION"
+EXITO "Descargando la versión $VERSION"
 wget -c $REPOSITORIO/fengoffice_$VERSION/fengoffice_$VERSION.zip
 
 unzip fengoffice_$VERSION.zip
