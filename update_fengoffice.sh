@@ -47,7 +47,7 @@ sleep 1
 
 EXITO "Iniciando actualización de Feng Office a la versión $VERSION"
 sleep 1
-rsync -avzhP /tmp/fengoffice $DIR_APACHE
+cp -r /tmp/fengoffice $DIR_APACHE
 
 EXITO "Otorgando permisos a cache/ config/ tmp/ upload/"
 sleep 1
