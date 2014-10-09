@@ -9,7 +9,7 @@ DIR_APACHE='/var/www'
 DIR_RESPALDOS='$HOME/respaldos'
 REPOSITORIO='http://sourceforge.net/projects/opengoo/files/fengoffice'
 
-echo "Introduzca la versión a la que quiere actualizar"
+echo "Introduzca la versión a la que quiere actualizar. La última probada en este escript fue la 2.7.1.1"
 read VERSION
 EXITO "Ha seleccionado la version $VERSION"
 sleep 1
